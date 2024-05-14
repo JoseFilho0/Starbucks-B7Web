@@ -184,3 +184,112 @@ header .line {
     background-position: center;
     background-size: cover;
 }
+
+
+.area4 {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    background-color: #e8e9ee;
+}
+.area4-content {
+    padding: 150px 80px;
+}
+.area4-text {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+.area4-img1 {
+    background-image: url('../img/bg3.jpg');
+    background-position: left;
+}
+
+
+.area5 {
+    background-image: url('../img/bg4.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 80px;
+    text-align: center;
+}
+
+
+@media(min-width:769px) and (max-width:1140px) {
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+@media(min-width:426px) and (max-width:768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .banner-images img {
+        margin-right: 20px;
+    }
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+@media(max-width:425px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header-menu {
+        margin-left: 20px;
+    }
+    .header-search input {
+        max-width: 90px;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .button {
+        padding: 8px 25px;
+        font-size: 13px;
+    }
+    .banner-images img{
+        width: 70px;
+        height: 70px;
+        border: 3px solid #117050;
+        margin-right: 10px;
+    }
+    .area1,
+    .area2,
+    .area3,
+    .area4 {
+        grid-template-columns: 1fr;
+    }
+    .area1-content,
+    .area2-content,
+    .area3-content,
+    .area4-content {
+        padding: 40px;
+    }
+    .area5 {
+        height: 200px;
+    }
+    footer {
+        font-size: 13px;
+        padding: 30px 40px;
+    }
+}
